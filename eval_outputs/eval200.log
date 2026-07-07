@@ -1,0 +1,35 @@
+Using device: cuda
+
+======================================================================
+CARLA (testCARLA, best_model.pth.tar)
+======================================================================
+Loaded checkpoint_epoch_200.pth.tar (epoch 200, best_loss 0.14477952037538802)
+Loaded 246 valid triplets (left, right, depth)
+
+=== CARLA metrics ===
+-- Accuracy metrics --
+  EPE (mean abs err) : 3.0517 px
+  RMSE               : 9.2798 px
+  bad>1px          : 38.91 %
+  bad>2px          : 25.29 %
+  bad>3px          : 19.18 %
+  D1-all (>3px &>5%) : 16.71 %
+  valid pixels       : 128,974,848
+-- Per-disparity-bin EPE --
+  EPE_disp[0,2)            0.0945 px  (n=36,842,679)
+  EPE_disp[2,4)            1.6884 px  (n=515,467)
+  EPE_disp[4,8)            2.2130 px  (n=2,421,297)
+  EPE_disp[8,16)           2.5024 px  (n=5,552,174)
+  EPE_disp[16,32)          3.4134 px  (n=13,184,199)
+  EPE_disp[32,64)          5.2740 px  (n=22,471,720)
+  EPE_disp[64,128)         4.8120 px  (n=33,527,930)
+  EPE_disp[128,1000000000.0)   3.1211 px  (n=14,459,382)
+
+=== GFLOPs (1x3x512x1024) ===
+Output shape: (1, 512, 1024)
+GFLOPs: 39.441   (GMACs: 19.721)
+Saved figure: /mnt/c/Users/prath/Assignments/compare/log-disparity/log-loss/eval_outputs/carla_samples.png
+
+Done. Figures written to: /mnt/c/Users/prath/Assignments/compare/log-disparity/log-loss/eval_outputs
+
+Log written to: /mnt/c/Users/prath/Assignments/compare/log-disparity/log-loss/eval_outputs/eval.log
